@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You 💘</title>
+  <style>
+    body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(135deg,#ffe6f0,#e6f7ff);color:#222}
+    .card{width:min(680px,92vw);background:#fff;border-radius:24px;padding:28px 24px;box-shadow:0 20px 60px rgba(0,0,0,.12);text-align:center}
+    h1{margin:0 0 8px;font-size:42px}
+    p{margin:0 0 18px;font-size:18px;opacity:.85}
+    .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    button{border:0;border-radius:999px;padding:12px 18px;font-size:16px;cursor:pointer}
+    .yes{background:#ff4d88;color:#fff}
+    .no{background:#f2f2f2}
+    .msg{margin-top:18px;font-size:18px}
+    .tiny{margin-top:10px;font-size:12px;opacity:.6}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Be my Valentine? 💘</h1>
+    <p>I made this little page just for you.</p>
+
+    <div class="btns">
+      <button class="yes" id="yesBtn">Yes 💖</button>
+      <button class="no" id="noBtn">No 🙈</button>
+    </div>
+
+    <div class="msg" id="msg"></div>
+    <div class="tiny">Tip: If music doesn’t autoplay, tap “Yes” once.</div>
+  </div>
+
+  <!-- Hidden YouTube audio (may require a click due to browser autoplay rules) -->
+  <iframe
+    width="0" height="0"
+    src="https://www.youtube.com/embed/vBFFFoeU6SY?autoplay=1&loop=1&playlist=vBFFFoeU6SY"
+    allow="autoplay">
+  </iframe>
+
+  <script>
+    const msg = document.getElementById("msg");
+    document.getElementById("yesBtn").onclick = () => {
+      msg.textContent = "YAY!! 💕 See you soon 🥰";
+    };
+    document.getElementById("noBtn").onclick = () => {
+      msg.textContent = "Okay… but you’re still cute 😌💗";
+    };
+  </script>
+</body>
+</html>
