@@ -3,11 +3,11 @@ title: love
 
 #Jimmy Kudo是工藤新一英文名，Rachel Moore是毛利兰英文名
 lover:
-  boy: Jimmy Kudo
-  girl: Rachel Moore
+  boy: Chen Chung Yu
+  girl: Dino
 
 date:
-# 时间需要符合JavaScript中的格式，safari浏览器不支持"1994-04-01 00:00:00" （
+# 时间需要符合JavaScript中的格式，safari浏览器不支持"2025-06-05 00:00:00" （
   start: "1994/04/01 00:00:00"
 
 ##音乐播放器
@@ -16,7 +16,7 @@ date:
 playlist:
   server: netease #音乐平台: netease, tencent, kugou, xiami, baidu
   type: playlist #类型：song, playlist, album, search, artist
-  id: 2042070338 #ID：song id, playlist id, album id, search keyword
+  id:  #ID：song id, playlist id, album id, search keyword
   fixed: true
   autoplay: true #可选：自动播放true,不自动播放false
   order: list #可选：随机random，列表list
